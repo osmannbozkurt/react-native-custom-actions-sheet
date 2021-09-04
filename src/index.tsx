@@ -495,15 +495,7 @@ export default class ActionSheet extends Component<Props, State, any> {
   };
 
   componentDidMount() {
-  this.keyboardShowSubscription =  Keyboard.addListener(
-      Platform.OS === "android" ? "keyboardDidShow" : "keyboardWillShow",
-      this._onKeyboardShow
-    );
-
-  this.KeyboardHideSubscription =  Keyboard.addListener(
-      Platform.OS === "android" ? "keyboardDidHide" : "keyboardWillHide",
-      this._onKeyboardHide
-    );
+ 
   }
 
   _onKeyboardShow = (event: KeyboardEvent) => {
@@ -559,18 +551,7 @@ export default class ActionSheet extends Component<Props, State, any> {
   componentWillUnmount() {
     this.keyboardShowSubscription?.remove();
     this.KeyboardHideSubscription?.remove();
-    
-    if (Keyboard.removeListener) {
-      Keyboard.removeListener(
-        Platform.OS === "android" ? "keyboardDidShow" : "keyboardWillShow",
-        this._onKeyboardShow
-      );
-  
-      Keyboard.removeListener(
-        Platform.OS === "android" ? "keyboardDidHide" : "keyboardWillHide",
-        this._onKeyboardHide
-      );
-    }
+     
    
   }
 
