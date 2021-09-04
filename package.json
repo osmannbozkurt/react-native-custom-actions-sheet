@@ -1,0 +1,53 @@
+{
+  "name": "react-native-custom-actions-sheet",
+  "version": "0.5.4",
+  "description": "A Cross Platform(Android & iOS) ActionSheet with a robust and flexible api, native performance and zero dependency code for react native. Create anything you want inside ActionSheet.",
+  "main": "index.tsx",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/osmannbozkurt/react-native-custom-actions-sheet.git"
+  },
+  "keywords": [
+    "bottom-animated",
+    "react-native",
+    "javascript",
+    "actionsheet",
+    "android",
+    "ios",
+    "action-sheet",
+    "bottom-sheet",
+    "bottom-drawer",
+    "dialog",
+    "picker",
+    "modal",
+    "drawer",
+    "raw-bottom-sheet",
+    "bottom-app-bar",
+    "react-native-action-sheet",
+    "react",
+    "native",
+    "action",
+    "sheet",
+    "bottom",
+    "sheet"
+  ],
+  "author": "osmannbozkurt",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/osmannbozkurt/react-native-custom-actions-sheet/issues/"
+  },
+  "homepage": "https://github.com/osmannbozkurt/react-native-custom-actions-sheet",
+  "peerDependencies": {
+    "react-native": "*"
+  },
+  "devDependencies": {
+    "@types/react": "^17.0.2",
+    "@types/react-native": "^0.64.2"
+  },
+  "directories": {
+    "example": "example"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
